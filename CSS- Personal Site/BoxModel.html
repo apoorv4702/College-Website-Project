@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: cyan;
+        }
+.container{
+    background-color: #b7de1b ;
+    border: 2px solid rgb(23, 180, 207) ;
+
+    /* we can set padding top bottom left right like this  */
+    /* padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    padding-right: 9px; */
+
+    /* padding = top right bottom left  */
+    /* padding : 25px 24px 18px 34px; */
+
+    /* padding = x(left/right)  y(top/bottom) */
+   padding: 34px 19px ;
+
+    
+    /* we can set margin top bottom left right like this  */
+    /* margin-top: 34px;
+    margin-bottom: 34px;
+    margin-left: 34px;
+    margin-right: 34px; */
+    
+      /* padding = top right bottom left  */
+    /* padding : 25px 24px 18px 34px; */
+
+    /* padding = x(left/right)  y(top/bottom) */
+    margin: 34px 19px;
+
+    border-radius: 23px;
+    width: 577px;
+    box-sizing: border-box;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="First">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptatibus cumque ullam fugit error iste nostrum ad fuga unde nobis. Asperiores, magnam voluptatem!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="Second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptatibus cumque ullam fugit error iste nostrum ad fuga unde nobis. Asperiores, magnam voluptatem!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="Third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptatibus cumque ullam fugit error iste nostrum ad fuga unde nobis. Asperiores, magnam voluptatem!</p>
+    </div>
+</body>
+</html>
