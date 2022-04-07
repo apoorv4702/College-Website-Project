@@ -1,4 +1,3 @@
-21 22 47 69 88
 <!DOCTYPE html>     
 
 <html lang="en">
@@ -12,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
     <style>
         *{
-
+            background-color: rgb(198, 203, 191);
         }
         body{
             font-family: 'Hubballi', cursive;
@@ -24,35 +23,48 @@
         }
         .item{
             border: 3px solid grey ;
-            margin: 12px 3px;
+            margin: auto;
             padding: 12px 3px;
             background: rgb(139, 142, 190);
         }
         #fruits{
             float: left;
-            width: 50%;
+            width: 52%;
         }
         #computer{
-
+            float: left;
+            width: 45%;
         }
         #stationary{
-
+            /* float: left; */
+            /* clear: both; */
+            clear: left;
+            width: 95%;
+        }
+        p,h1{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+            width: 455px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>Welcome to my store</h1>
         <div id="fruits" class="item">
             <h3>fruits</h3>
-            <p id="fruitpara" class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione sapiente! Officiis sint cumque doloremque velit accusantium libero tempora. Dolor ab sequi facilis repellat fugiat cupiditate id consequuntur a nesciunt. </p>
+            <p id="fruitpara" class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione sapiente! Officiis sint cumque doloremque velit accusantium libero tempora. Dolor ab sequi facilis repellat fugiat cupiditate id consequuntur a nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta repellendus sint quia praesentium labore. Soluta itaque ratione accusantium perspiciatis magnam officia quaerat at dolorem. Rem commodi impedit, nulla repellat id consequatur accusantium officia! </p>
         </div>
-        <div id="computerpara" class="item">
-            <h3>fruits</h3>
-            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eveniet voluptatum nesciunt facilis velit sunt ducimus tempora, iure delectus quis quam odio. Quisquam molestiae error eum saepe neque inventore laborum. </p>
+        <div id="computer" class="item">
+            <h3>computers</h3>
+            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eveniet voluptatum nesciunt facilis velit sunt ducimus tempora, iure delectus quis quam odio. Quisquam molestiae error eum saepe neque inventore laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque delectus neque distinctio ducimus culpa nesciunt reprehenderit eligendi porro soluta ullam illum asperiores, aut labore autem at blanditiis consequuntur rem accusamus? Consequuntur, qui ullam? </p>
         </div>
         <div id="stationary" class="item">
-            <h3>fruits</h3>
-            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam pariatur labore quam nobis saepe ipsam facere corporis, explicabo minima natus et optio voluptatum. Sit eum sequi culpa blanditiis vitae! </p>
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam pariatur labore quam nobis saepe ipsam facere corporis, explicabo minima natus et optio voluptatum. Sit eum sequi culpa blanditiis vitae! </p>
         </div>
     </div>
 </body>
