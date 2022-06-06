@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 14px;
+        background-color: lightblue;
+        border: 2px solid black;
+        color: black;
+        font-weight: bold;
+        text-decoration-color: black;
+        border-radius: 8px ;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- Browser events :
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOM Content Loaded
+
+    transitioned --> 
+
+    <div class="container">
+        <h1>This is heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eligendi explicabo expedita harum adipisci, tempore doloremque et dolore aperiam quia commodi ducimus nulla fuga necessitatibus, rerum accusamus quas, non optio. Ea, vitae laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa asperiores nemo quo eos aut dolore ratione. Facere, maxime ab corporis rerum, ipsa quaerat exercitationem amet blanditiis similique eum ipsum magni, quis repellendus! Amet vel, voluptates, quibusdam nam earum vero nostrum et magni, maiores quo illum rerum at commodi fugiat nesciunt. Dolores repudiandae nulla, iste sunt, est nobis voluptatem quod porro vero natus voluptates eos quaerat? Eaque ipsum possimus exercitationem odio sunt eos cupiditate culpa deserunt, vero obcaecati reprehenderit labore eligendi sed pariatur suscipit modi cum ea quas doloribus nostrum assumenda illo tempora recusandae. Reprehenderit tenetur neque eius sit numquam consectetur vel minima reiciendis, illum provident consequuntur vitae voluptas ea repudiandae sed aperiam eligendi ullam ex! Praesentium libero, ut at unde cum quaerat aliquid iste, adipisci est inventore consequatur architecto ratione voluptatibus sed!</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        let para = document.getElementById(`para`) ;
+        para.addEventListener('mouseover', function run(){
+            alert ('Mouse Inside');
+        } );
+
+        para.addEventListener('mouseout', function run(){
+            alert ('Mouse now went outside');
+        } );
+
+
+
+        function toggleHide(){
+            let btn = document.getElementById(`btn`);
+            let para = document.getElementById(`para`) ;
+            if (para.style.display != 'none') {
+                para.style.display = `none` ;   
+            }
+            else{
+                para.style.display = 'block' ;
+            }
+        }
+    </script>
+
+
+</body>
+</html>
